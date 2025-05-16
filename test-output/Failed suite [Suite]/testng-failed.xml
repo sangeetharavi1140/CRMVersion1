@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="genaralUtility.ListenerImplementation"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Testcases.CreateOrganizationEndToEndTest">
+        <methods>
+          <include name="VerifyCreateOrgEtoETest"/>
+          <include name="ac"/>
+          <include name="as"/>
+          <include name="bc"/>
+          <include name="bs"/>
+          <include name="am"/>
+          <include name="bm"/>
+        </methods>
+      </class> <!-- Testcases.CreateOrganizationEndToEndTest -->
+      <class name="Testcases.CreateContactwithOrganizationEndtoEndTest">
+        <methods>
+          <include name="ac"/>
+          <include name="as"/>
+          <include name="VerifycreateconwithorgTest"/>
+          <include name="bc"/>
+          <include name="bs"/>
+          <include name="am"/>
+          <include name="bm"/>
+        </methods>
+      </class> <!-- Testcases.CreateContactwithOrganizationEndtoEndTest -->
+    </classes>
+  </test> <!-- Test2(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
