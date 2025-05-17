@@ -34,7 +34,7 @@
   
   </profile>
   <profile>
-  <id>fail</id>
+  <id>smoke</id>
    <build>
   <pluginManagement>
   <plugins>
