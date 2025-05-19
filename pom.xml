@@ -5,6 +5,31 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <profiles>
+   <profile><id>parallel</id>
+  
+   <build>
+  <pluginManagement>
+  <plugins>
+    <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.3</version>
+         <configuration>
+            <!-- put your confi<gurations here -->
+            <suiteXmlFiles>
+            <suiteXmlfile>Paralleltestng.xml</suiteXmlfile>
+            </suiteXmlFiles>
+          </configuration>
+        </plugin> 
+  </plugins>
+  </pluginManagement>
+  </build>
+    </profile>
+  
+  
+  
+  
+  
   <profile><id>reg</id>
   
    <build>
