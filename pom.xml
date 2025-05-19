@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <profiles>
-   <profile><id>parallel</id>
+   <profile><id>distribute</id>
   
    <build>
   <pluginManagement>
@@ -17,7 +17,7 @@
          <configuration>
             <!-- put your confi<gurations here -->
             <suiteXmlFiles>
-            <suiteXmlfile>Paralleltestng.xml</suiteXmlfile>
+            <suiteXmlfile>Distributedparalleltestng.xml</suiteXmlfile>
             </suiteXmlFiles>
           </configuration>
         </plugin> 
