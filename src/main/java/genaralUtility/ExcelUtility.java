@@ -2,7 +2,10 @@ package genaralUtility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -29,4 +32,24 @@ public class ExcelUtility {
 		
 		
 	}
+	public Object[][] readMultipleDateFromExcel(String path,String SheetName) throws Throwable, IOException
+	{
+		fis=new FileInputStream(path);
+		Workbook wb = WorkbookFactory.create(fis);
+		int row = wb.getSheet(SheetName).getLastRowNum();
+		int column=wb.getSheet(SheetName).getRow(0).getLastCellNum();
+		Object[][] data=new Object[row][column];
+		DataFormatter formatter=new DataFormatter();
+		for(int i=1;i<=row;i++)
+		{
+			for(int j=0;j<column;j++)
+			{
+				Cell cell=wb.getSheet(SheetName).getRow(i).getCell(j);
+				data[i-1][j]=formatter.formatCellValue(cell);
+			}
+		}
+		return data;
+		
+	}
+
 }

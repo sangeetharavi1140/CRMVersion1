@@ -6,6 +6,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Testcases.CreateOrganizationTest"/>
+      <class name="Testcases.MultiDataSetTest"></class>
  <!-- <class name="Testcases.CreateOrganizationEndToEndTest"/>
 <class name="Testcases.CreateContactwithOrganizationEndtoEndTest"/>-->
     </classes>

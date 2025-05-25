@@ -66,16 +66,16 @@ public void bs()
 	{System.out.println("--------------Browser closed successfully------------");
 		driver.quit();
 	}
-	@BeforeMethod(alwaysRun=true)
-	public void bm() throws Throwable
-	{
+	//@BeforeMethod(alwaysRun=true)
+	//public void bm() throws Throwable
+	/*{
 		LoginPage lp=new LoginPage( driver);
 		String UN = putil.readDataFromProperyFile("username");
 		String Pwd = putil.readDataFromProperyFile("password");
 		lp.appLogin(UN, Pwd);
 		System.out.println("---------application login successful------------");
 		
-	}
+	}*/
 	@AfterMethod(alwaysRun=true)
 	public void am()
 	{
